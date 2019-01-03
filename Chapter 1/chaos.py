@@ -19,9 +19,18 @@
 #    print(x)
 
 #Modify program to get the number of repetitions from the user
+#print("This program illstratea a chaotic function")
+#x = eval(input("Enter a number between 0 and 1: "))
+#n = eval(input("Enter the number of times I should repeat: "))
+#for i in range(n):
+#    x = 2.0 * x * (1 - x)
+#    print(x)
+    
+#Run the algebraic equation 3 equivalent ways and compare them
 print("This program illstratea a chaotic function")
 x = eval(input("Enter a number between 0 and 1: "))
-n = eval(input("Enter the number of times I should repeat: "))
-for i in range(n):
-    x = 2.0 * x * (1 - x)
-    print(x)    
+for i in range(10):
+    x = 3.9 * x * (1 - x)
+    y = 3.9 * (x - x * x)
+    z = 3.9 * x - 3.9 * x * x
+    print(x, y, z)
