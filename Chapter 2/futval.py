@@ -6,11 +6,13 @@ def main():
     print("of an investment.")
     
     numberOfYears = eval(input("Enter the number of years for your investment: "))
+    fixedInvestment = eval(input("Enter the fixed annual investement amount: "))
     principal = eval(input("Enter the initial principal: "))
     apr = eval(input("Enter the annual interest rate as a decimal value: "))
     
     for i in range(numberOfYears):
-        principal = principal * (1 + apr)
+        principal = (principal * (1 + apr)) + fixedInvestment
+        
         
     print("The value in", numberOfYears, "years is:", round(principal, 2))
     
